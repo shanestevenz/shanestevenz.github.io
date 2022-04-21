@@ -7,7 +7,7 @@ import { projects } from '../../constants/constants';
 const Projects = () => (
   <Section nopadding id='projects'>
     < SectionDivider />
-    <SectionTitle main>Projets</SectionTitle>
+    <SectionTitle main>My Projects</SectionTitle>
     <GridContainer>
       {projects.map((project) => (
         <BlogCard>
@@ -29,7 +29,7 @@ const Projects = () => (
             </TagList>
           </div>
           <UtilityList>
-            <ExternalLinks href={project.visit}> Code </ExternalLinks>
+            <ExternalLinks href={project.visit}> Visit </ExternalLinks>
             <ExternalLinks href={project.source}> Source </ExternalLinks>
           </UtilityList>
         </BlogCard>
