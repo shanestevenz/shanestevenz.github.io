@@ -20,7 +20,7 @@ export const Container = styled.div`
 
 export const Span = styled.span`
   font-size: 3rem;
-
+  margin-left: 10px;
 `;
 export const Div1 = styled.div`
   grid-area: 1 / 1 / 2 / 2;
@@ -35,6 +35,7 @@ export const Div2 = styled.div`
   grid-area: 1 / 2 / 2 / 4;
   display: flex;
   justify-content: space-around;
+  
   @media ${(props) => props.theme.breakpoints.sm} {
     grid-area: 2 / 2 / 3 / 5;
   }
@@ -95,7 +96,7 @@ export const ContactDropDown = styled.button`
 `;
 
 export const NavProductsIcon = styled(IoIosArrowDropdown)`
-  margin-left: 8px;
+ c
   display: flex;
   align-self: center;
   transition: 0.3s ease;

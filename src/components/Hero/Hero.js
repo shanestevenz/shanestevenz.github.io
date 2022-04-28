@@ -13,11 +13,12 @@ const Hero = () => (
   </SectionTitle>
 
   <SectionText>
-    The purpose of this website was to learn more about React and Next.js
+    This portfolio was created with Next.js as a learning experience. Keep reading to see some cool projects I've worked on! <br></br> Feel free to reach out to me with any questions  <br></br>Contact: smstevens@wpi.edu
   </SectionText>
-  <Button onClick = {() => window.location = 'https://google.com'}  > 
+  {/*<Button onClick = {() => window.location = 'https://google.com'}  > 
     Learn More
   </Button>
+*/}
 </LeftSection>
 
   </Section>
