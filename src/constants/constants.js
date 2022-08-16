@@ -11,7 +11,7 @@ export const projects = [
   {
     title: 'Digitization Consultant',
     description:"Designed, developed, and deployed e-commerce websites for businesses in the Worcester, MA region. Utilized agile methodology, working directly with clients to analyze and actualize various business needs. Exceeded client expectations by going above and beyond to improve their businesses through creating logos, colors/themes, and product descriptions. Developed and maintained websites, using a variety of web-builders and hosting platforms (Wordpress, Weebly, Wix, GoDaddy).",
-    image: '/images/friendsByDesign.png',
+    image: '/images/friendsByDesign.PNG',
     tags: ['WordPress', 'GoDady','Business'],
     source: 'https://google.com',
     visit: 'friendsbydesignshop.com/', //update when we get the SSL/HTTPS
