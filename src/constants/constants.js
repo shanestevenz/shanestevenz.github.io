@@ -1,3 +1,5 @@
+import { DiAndroid, DiAws, DiCode, DiDatabase, DiGit, DiMongodb, DiPhotoshop, DiReact, DiUnitySmall, DiWordpress } from "react-icons/di";
+import {GrRobot} from "react-icons/gr";
 export const projects = [
   {
     title: 'Wyvern Choice',
@@ -36,6 +38,66 @@ export const projects = [
     id: 3,
   },
 ];
+
+
+export const technologies = [
+  {
+    title: 'Front-End',
+    description: "HTML/CSS, React, Tailwind",
+      icon: DiReact,
+    id: 0,
+  },  
+  {
+    title: 'Back-End',
+    description: "Express, SQL, MongoDB",
+      icon: DiDatabase,
+    id: 1,
+  },  
+  {
+    title: 'MongoDB',
+    description: "",
+      icon: DiMongodb,
+    id: 2,
+  },
+  {
+    title: 'AWS',
+    description: "Amazon Web Services",
+      icon: DiAws,
+    id: 3,
+  },  
+  {
+    title: 'Unity 3D',
+    description: "Game Development Engine",
+      icon: DiUnitySmall,
+    id: 4,
+  },  
+  {
+    title: 'Git',
+    description: "",
+      icon: DiGit,
+    id: 5,
+  },  
+  {
+    title: 'WordPress',
+    description: "",
+      icon: DiWordpress,
+    id: 6,
+  },  
+  {
+    title: 'ROS2',
+    description: "Robot Operating System",
+      icon: DiCode,
+    id: 7,
+  },  
+  {
+    title: 'Photoshop',
+    description: "",
+      icon: DiPhotoshop,
+    id: 8,
+  }, 
+
+];
+
 
 export const TimeLineData = [
   { year: 2017, text: 'Started my journey', },

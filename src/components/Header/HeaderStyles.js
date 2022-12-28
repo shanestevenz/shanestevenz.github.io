@@ -3,20 +3,39 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: 1fr 5fr 1fr;
   grid-template-rows: 1fr;
   grid-column-gap: 2rem;
-  padding: 1rem;
-  padding-top: 2rem;
+
+  position: sticky;
+  top: 4rem;
+  
+  
+  
 
   @media ${(props) => props.theme.breakpoints.sm} {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 60px);
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(1, 60px);
     grid-column-gap: 0.5rem;
     grid-row-gap: 0.5rem;
   }
 `;
+
+
+
+export const HeaderTitle = styled.h2`
+  font-weight: 400;
+  font-size: 25px;
+
+  width: max-content;
+  max-width: 85%;
+  
+  margin-bottom: 16px;
+  
+
+`
+
 
 export const Span = styled.span`
   font-size: 3rem;
@@ -40,32 +59,14 @@ export const Div2 = styled.div`
     grid-area: 2 / 2 / 3 / 5;
   }
 `;
-export const Div3 = styled.div`
-  grid-area: 1 / 5 / 2 / 6;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  @media ${(props) => props.theme.breakpoints.sm} {
-    align-items: center;
-    grid-area: 1 / 4 / 2 / 6;
-  }
+export const Div3 = styled.div` 
+  display:flex;
+  grid-area: 1 / 4;
+ 
+  
+  
 `;
 
-// Navigation Links
-export const NavLink = styled.a`
-  font-size: 2rem;
-  line-height: 32px;
-  color: rgba(255, 255, 255, 0.75);
-  transition: 0.4s ease;
-  &:hover {
-    color: #fff;
-    opacity: 1;
-    cursor: pointer;
-  }
-  @media ${(props) => props.theme.breakpoints.sm} {
-    padding: 0.5rem;
-  }
-`;
 
 /// DropDown Contact
 export const ContactDropDown = styled.button`
@@ -119,11 +120,10 @@ export const NavProductsIcon = styled(IoIosArrowDropdown)`
 export const SocialIcons = styled.a`
 transition: 0.3s ease;
 color: white;
-border-radius: 50px;
-  padding: 8px;
+margin-right:2rem;
 &:hover {
-    background-color: #212d45;
-    transform: scale(1.2);
+    
+    transform: scale(1.3);
     cursor: pointer;
     
   }

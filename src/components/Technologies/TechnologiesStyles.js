@@ -60,13 +60,25 @@ export const ListContainer = styled.div`
   }
 `
 
+
+export const TitleContainer = styled.div`
+   display: inline-block;
+ 
+
+  @media ${props => props.theme.breakpoints.sm}{
+    display: flex;
+    margin-left: 18px;
+  }
+`
+
 export const ListTitle = styled.h4`
   font-weight: 700;
   font-size: 28px;
   line-height: 32px;
   letter-spacing: 0.02em;
+ 
   color: #FFFFFF;
-  margin-bottom: 8px;
+  margin-top: 8px;
 
 @media ${props => props.theme.breakpoints.md}{
   font-size: 24px;
@@ -109,8 +121,33 @@ export const ListItem = styled.li`
 @media ${props => props.theme.breakpoints.sm}{
   margin-bottom: 14px;
   max-width: 320px;
-  flex-direction: row;
+  
 }
+`
+
+
+export const TechDivider = styled.div`
+
+  width: 90%;
+  height: 2px;
+  border-radius: 10px;
+  background-color: #fff;
+ 
+  margin-top: 2px;
+    margin-bottom: 2px;
+
+    
+    margin: ${(props) => props.divider ? "4rem 0" : "" };
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    width: 90%;
+    height: 4px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width: 90%;
+    height: 2px;
+  }
 `
 
 export const ListIcon = styled.img`
