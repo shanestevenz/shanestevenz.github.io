@@ -18,7 +18,7 @@ const Hero = () => (
          <br></br>Contact: smstevens@wpi.edu
       </SectionText>
 
-    <Link href='#about'> 
+    <Link href='#projects'> 
     <Button > Learn More</Button>
      </Link>
 

@@ -8,6 +8,7 @@ import Technologies from '../components/Technologies/Technologies';
 import Timeline from '../components/TimeLine/TimeLine';
 import { Layout } from '../layout/Layout';
 import { Section } from '../styles/GlobalComponents';
+import About from '../components/About/About';
 
 
 {/** This is the home page (also the only page)
@@ -27,6 +28,7 @@ const Home = () => {
         <Projects />
       <Technologies />
       {/*<Timeline /> */}
+      <About/>
       {/*  <Acomplishments /> */}
     </Layout>
   );
