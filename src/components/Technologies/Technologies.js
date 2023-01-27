@@ -7,7 +7,7 @@ const Technologies = () => (
   <Section nopadding id='tech'>
     < SectionDivider />
     <SectionTitle main>Technologies</SectionTitle>
-    <SectionText> Technologies I use </SectionText>
+    <SectionText> These are just some of the software tools I'm familar with! </SectionText>
 
   {/* using the map function, this creates a list item for each technology defined in the constants file*/}
     <List> 

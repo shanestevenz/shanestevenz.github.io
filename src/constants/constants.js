@@ -1,33 +1,37 @@
-import { DiAndroid, DiAws, DiCode, DiDatabase, DiGit, DiMongodb, DiPhotoshop, DiReact, DiUnitySmall, DiWordpress } from "react-icons/di";
+import { DiAndroid, DiAws, DiCode, DiDatabase, DiGit, DiMongodb, DiMysql, DiPhotoshop, DiReact, DiUnitySmall, DiWordpress } from "react-icons/di";
 import {GrRobot} from "react-icons/gr";
 export const projects = [
+
+  {
+    title: 'Autonomous Ocean Cleaning Robot',
+    description: "Designing and developing a multi-sensor autonomous marine vehicle to remove plastic from ocean hot spots.     Working in a team of 5 Mechanical Engineers and 3 Computer Science students to fully design and implement a 5ft by 5ft marine robot",
+      image: '/images/net_image.jpg',
+      tags: ['C++', 'Python', 'ROS2','Linux'],
+    source: 'https://github.com/JohnMuirhead000/MQP-boat',
+    visit: '',
+    id: 0,
+  },  
+
+
+  {
+    title: 'Digitization Consultant',
+    description:"Designed, developed, and deployed e-commerce websites for businesses in the Worcester, MA region. Utilized agile methodology, working directly with clients to analyze and actualize various business needs. Exceeded client expectations by going above and beyond to improve their businesses through creating logos, colors/themes, and product descriptions. Developed and maintained websites, using a variety of web-builders and hosting platforms.",
+    image: '/images/BF.png',
+    tags: ['WordPress', 'GoDaddy','Business'],
+    source: '',
+    visit: 'https://blueflamingoentertainment.com/', //update when we get the SSL/HTTPS
+    id: 1,
+  },
   {
     title: 'Wyvern Choice',
     description: "The app allows users to set up a question/poll, send a unique link to friends, and vote/comment on each option. The user can create an optional login and  username. Designed and developed cloud-based AWS app in a four-person team. Built using test driven development and engineered the backend using Java.",
       image: '/images/wyvernChoice.png',
       tags: ['AWS', 'SQL', 'Java','HTML/CSS'],
     source: 'https://github.com/shanestevenz/WyvernChoice',
-    visit: 'https://google.com',
-    id: 0,
-  },  
-  {
-    title: 'Digitization Consultant',
-    description:"Designed, developed, and deployed e-commerce websites for businesses in the Worcester, MA region. Utilized agile methodology, working directly with clients to analyze and actualize various business needs. Exceeded client expectations by going above and beyond to improve their businesses through creating logos, colors/themes, and product descriptions. Developed and maintained websites, using a variety of web-builders and hosting platforms (Wordpress, Weebly, Wix, GoDaddy).",
-    image: '/images/friendsByDesign.PNG',
-    tags: ['WordPress', 'GoDady','Business'],
-    source: 'https://google.com',
-    visit: 'friendsbydesignshop.com/', //update when we get the SSL/HTTPS
-    id: 1,
-  },
-  {
-    title: 'I make Games too!',
-    description: "A few times a year, I compete in Ludum Dare. A 72-hour video game coding competetition! To this this date I've made over 9 games from scratch using C# and Unity. I, alongside my friend, publish under the name DevRokket. We've ammased several thousands downloads! Check us out!",
-      image: '/images/games.png',
-      tags: ['Unity', 'C#','Blender/Maya'],
-    source: 'https://google.com',
-    visit: 'https://devrokket.itch.io/',
+    visit: '',
     id: 2,
-  },
+  },  
+  
   {
     title: 'Ubiqtuous EEG Headset',
     description: "Researched and developed a portable EEG headset that provides reliable data for research fields, medical purposes, and general consumer applications. Researched EEG devices and related markets to identify and fill industry gaps. Conducted numerous experiments and thorough data analysis of prototype EEG and FNIRS based devices. Collaborated with and led a team of 10 students over the course of 2 months under the advisement of professional staff.",
@@ -36,6 +40,16 @@ export const projects = [
     source: 'https://digital.wpi.edu/pdfviewer/6d570094s',
     visit: 'https://digital.wpi.edu/concern/student_works/wh246w27h?locale=en',
     id: 3,
+  },
+
+  {
+    title: 'I make Games too!',
+    description: "A few times a year, I compete in Ludum Dare. A 72-hour video game coding competetition! To this this date I've made over 9 games from scratch using C# and Unity. I, alongside my friend, publish under the name DevRokket. We've ammased several thousands downloads! Check us out!",
+      image: '/images/games.png',
+      tags: ['Unity', 'C#','Blender/Maya'],
+    source: '',
+    visit: 'https://devrokket.itch.io/',
+    id: 4,
   },
 ];
 
@@ -55,13 +69,20 @@ export const technologies = [
   },  
   {
     title: 'MongoDB',
-    description: "",
+    description: "No SQL database for web apps",
       icon: DiMongodb,
     id: 2,
   },
   {
+    title: 'MySQL',
+    description: "MySQL Workbench for databases",
+      icon: DiMysql,
+    id: 2,
+  },
+
+  {
     title: 'AWS',
-    description: "Amazon Web Services",
+    description: "Cloud applications",
       icon: DiAws,
     id: 3,
   },  
@@ -73,25 +94,25 @@ export const technologies = [
   },  
   {
     title: 'Git',
-    description: "",
+    description: "Source control I use for all my Projects",
       icon: DiGit,
     id: 5,
   },  
   {
     title: 'WordPress',
-    description: "",
+    description: "Website builder for client work",
       icon: DiWordpress,
     id: 6,
   },  
   {
     title: 'ROS2',
-    description: "Robot Operating System",
+    description: "Robot Operating System 2.0",
       icon: DiCode,
     id: 7,
   },  
   {
     title: 'Photoshop',
-    description: "",
+    description: "Image designer for graphics",
       icon: DiPhotoshop,
     id: 8,
   }, 

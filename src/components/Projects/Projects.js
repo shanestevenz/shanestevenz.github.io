@@ -29,8 +29,10 @@ const Projects = () => (
             </TagList>
           </div>
           <UtilityList>
-            <ExternalLinks href={project.visit} target="_blank" rel="noopener noreferrer"> Visit </ExternalLinks> 
-            <ExternalLinks href={project.source} target="_blank" rel="noopener noreferrer"> Source </ExternalLinks>
+                
+              {/**Check if the visit and source button have values... if not dont render */}
+              {project.visit != "" && <ExternalLinks href={project.visit} target="_blank" rel="noopener noreferrer"> Visit </ExternalLinks> }
+              {project.source != "" && <ExternalLinks href={project.source} target="_blank" rel="noopener noreferrer"> Source </ExternalLinks>}
           </UtilityList>
         </BlogCard>
       ))}

@@ -13,7 +13,7 @@ import { Container, Container2, SMain } from './LayoutStyles'
 export const Layout = ({ children }) => {
   return (
     <Container>
-        <Header />
+       {/*<Header /> */}
           <Container2>
               <Sidebar />
               <SMain>{children}</SMain>
